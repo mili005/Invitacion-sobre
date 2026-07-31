@@ -68,10 +68,11 @@ el.style.visibility="visible";
 .add({
 targets:envelope,
 rotate:[0,90],
-duration:1000,
+scale:[1,1.35],
+duration:1200,
 easing:"easeInOutQuad",
 complete:()=>{
-    envelope.classList.add("opened");
+envelope.classList.add("opened");
 }
 },"-=100")
 .add({
