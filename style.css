@@ -40,12 +40,11 @@ transform-style:preserve-3d;
 filter:drop-shadow(0 26px 35px rgba(0,0,0,.35));
 z-index:10;
 transition:width 1.2s ease, height 1.2s ease;
-}
 .envelope.opened{
     width:100vw;
-    height:150vw;
-    max-height:100vh;
+    height:150vh;
     aspect-ratio:10/15;
+    transform-origin:center center;
 }
 .envelope-shadow{
 position:absolute;
@@ -276,45 +275,43 @@ box-shadow:0 0 12px #fff4a8;
 opacity:0;
 pointer-events:none;
 }
-/* SOBRE ABIERTO EN VERTICAL */
+/* SOBRE ABIERTO EN VERTICAL CON LAS 4 SOLAPAS ABIERTAS */
 
 .envelope.opened .flap-top{
-    top:0;
+    top:-20%;
     left:0;
     width:100%;
     height:25%;
-    clip-path:polygon(0 0,100% 0,50% 100%);
 }
 
 .envelope.opened .flap-bottom{
-    bottom:0;
+    bottom:-20%;
     left:0;
     width:100%;
     height:25%;
-    clip-path:polygon(0 100%,100% 100%,50% 0);
 }
 
 .envelope.opened .flap-left{
     top:0;
-    left:0;
+    left:-20%;
     width:25%;
     height:100%;
-    clip-path:polygon(0 0,100% 50%,0 100%);
 }
 
 .envelope.opened .flap-right{
     top:0;
-    right:0;
+    right:-20%;
     width:25%;
     height:100%;
-    clip-path:polygon(100% 0,0 50%,100% 100%);
 }
 
+/* VIDEO CENTRADO VERTICAL */
 .envelope.opened .video-card{
-    width:60%;
-    height:65%;
+    width:70%;
+    height:75%;
     top:50%;
     left:50%;
+    transform:translate(-50%,-50%) scale(1);
 }
 @media (max-width:640px){
 .envelope{width:95vw}
