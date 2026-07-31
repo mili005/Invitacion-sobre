@@ -67,7 +67,7 @@ el.style.visibility="visible";
 })
 .add({
 targets:envelope,
-rotate:[0,90],
+rotate:[0,0],
 scale:[1,1.35],
 duration:1200,
 easing:"easeInOutQuad",
