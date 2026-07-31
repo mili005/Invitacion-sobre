@@ -160,10 +160,21 @@ clip-path:polygon(100% 0,0 50%,100% 100%);
 transform-origin:0% 50%;
 transform:rotateY(0deg);
 }
-.flap-top.open{transform:rotateX(-175deg)}
-.flap-bottom.open{transform:rotateX(175deg)}
-.flap-left.open{transform:rotateY(-175deg)}
-.flap-right.open{transform:rotateY(175deg)}
+.flap-top.open{
+    transform:rotateX(-120deg) translateY(-35%);
+}
+
+.flap-bottom.open{
+    transform:rotateX(120deg) translateY(35%);
+}
+
+.flap-left.open{
+    transform:rotateY(-120deg) translateX(-35%);
+}
+
+.flap-right.open{
+    transform:rotateY(120deg) translateX(35%);
+}
 .seal{
 position:absolute;
 z-index:30;
