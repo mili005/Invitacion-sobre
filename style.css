@@ -44,7 +44,10 @@ transition:width 1.2s ease, height 1.2s ease;
 .envelope.opened{
 width:100vw;
 height:100vh;
-aspect-ratio:auto;
+aspect-ratio:9/16;
+max-width:100vw;
+max-height:100vh;
+margin:auto;
 }
 .envelope-shadow{
 position:absolute;
@@ -71,12 +74,12 @@ box-shadow:inset 0 0 0 3px rgba(255,255,255,.18),inset 0 -18px 30px rgba(130,75,
 transform:translateZ(-2px);
 }
 .video-card{
-position:fixed;
+position:absolute;
 top:50%;
 left:50%;
-width:auto;
-height:80vh;
-max-width:95vw;
+width:84%;
+height:88%;
+max-width:none;
 border-radius:14px;
 overflow:hidden;
 background:#000;
@@ -97,7 +100,7 @@ transition:opacity .6s ease, transform .6s ease, visibility 0s;
 }
 .invitation-video{
 display:block;
-width:auto;
+width:100%;
 height:100%;
 object-fit:contain;
 background:#000;
