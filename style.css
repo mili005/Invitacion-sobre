@@ -40,6 +40,8 @@ transform-style:preserve-3d;
 filter:drop-shadow(0 26px 35px rgba(0,0,0,.35));
 z-index:10;
 transition:width 1.2s ease, height 1.2s ease;
+}
+
 .envelope.opened{
     width:100vw;
     height:150vh;
@@ -99,8 +101,9 @@ transition:opacity .6s ease, transform .6s ease, visibility 0s;
 display:block;
 width:100%;
 height:100%;
-object-fit:contain;
+object-fit:cover;
 background:#000;
+transform:rotate(0deg);
 }
 .flap{
 position:absolute;
@@ -307,8 +310,8 @@ pointer-events:none;
 
 /* VIDEO CENTRADO VERTICAL */
 .envelope.opened .video-card{
-    width:70%;
-    height:75%;
+    width:66%;
+    height:80%;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%) scale(1);
